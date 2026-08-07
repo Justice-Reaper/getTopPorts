@@ -129,5 +129,5 @@ echo -e "${cyan}Number of ports obtained: ${yellow}$ACTUAL_PORTS${nc}"
 echo -e "${cyan}$protocol ports saved in: ${yellow}$OUTPUT_FILE${nc}"
 echo -e "${cyan}Format: ${yellow}$format${nc}"
 
-xclip -selection clipboard < "$OUTPUT_FILE"
+wl-copy < "$OUTPUT_FILE"
 echo -e "${cyan}Content copied to clipboard ${yellow}✓${nc}"
