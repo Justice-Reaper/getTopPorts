@@ -1,6 +1,5 @@
 #!/bin/bash
 
-script_name=$(basename "$0")
 
 red='\033[0;31m'
 yellow='\033[1;33m'
@@ -12,10 +11,10 @@ num_ports=""
 format=""
 
 show_usage() {
-    echo -e "${red}Usage: ${nc}$script_name --protocol <protocol> --number-of-ports <number> --format <format>"
-    echo -e "${cyan}Available protocols: ${yellow}TCP, UDP, SCTP"
-    echo -e "${cyan}Available formats: ${yellow}one-per-line, inline"
-    echo -e "${cyan}Example: ${nc}$script_name --protocol TCP --number-of-ports 1000 --format one-per-line"
+    echo -e "${red}Usage: ${nc}get-top-ports --protocol <protocol> --number-of-ports <number> --format <format>"
+    echo -e "${cyan}Available protocols: ${yellow}TCP, UDP, SCTP${nc}"
+    echo -e "${cyan}Available formats: ${yellow}one-per-line, inline${nc}"
+    echo -e "${cyan}Example: ${nc}get-top-ports --protocol TCP --number-of-ports 1000 --format one-per-line"
     exit 1
 }
 
